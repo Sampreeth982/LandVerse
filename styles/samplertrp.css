@@ -202,3 +202,260 @@ body {
 .cta:hover {
     text-decoration: underline;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile - Small Devices (up to 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .content {
+        margin-top: 20px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet - Medium Devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about .image,
+    .about .content {
+        width: 100%;
+    }
+
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* Desktop - Large Devices (901px and up) */
+@media (min-width: 901px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about .image {
+        width: 50%;
+    }
+
+    .about .content {
+        width: 45%;
+    }
+
+    .service-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 30%;
+    }
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #f8fafa;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Content Section */
+.hero-content {
+    max-width: 500px;
+}
+
+.agency-tag {
+    font-size: 14px;
+    color: #ff5a5f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+.enquiry-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enquiry-btn:hover {
+    background-color: #e6494b;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+/* Tablet (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+}
+
+/* Desktop (901px and above) */
+@media (min-width: 901px) {
+    .hero-section {
+        padding: 80px 10%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 550px;
+    }
+}
