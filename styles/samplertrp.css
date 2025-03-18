@@ -202,3 +202,143 @@ body {
 .cta:hover {
     text-decoration: underline;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile - Small Devices (up to 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .content {
+        margin-top: 20px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet - Medium Devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about .image,
+    .about .content {
+        width: 100%;
+    }
+
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* Desktop - Large Devices (901px and up) */
+@media (min-width: 901px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about .image {
+        width: 50%;
+    }
+
+    .about .content {
+        width: 45%;
+    }
+
+    .service-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 30%;
+    }
+}
