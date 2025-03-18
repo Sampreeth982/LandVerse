@@ -342,3 +342,120 @@ body {
         width: 30%;
     }
 }
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #f8fafa;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Content Section */
+.hero-content {
+    max-width: 500px;
+}
+
+.agency-tag {
+    font-size: 14px;
+    color: #ff5a5f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+.enquiry-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enquiry-btn:hover {
+    background-color: #e6494b;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+/* Tablet (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+}
+
+/* Desktop (901px and above) */
+@media (min-width: 901px) {
+    .hero-section {
+        padding: 80px 10%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 550px;
+    }
+}
