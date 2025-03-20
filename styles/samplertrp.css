@@ -136,6 +136,8 @@ body {
 .services {
     max-width: 1200px;
     margin: 20px;
+    margin-left: 140px;
+    margin-top: 20px;
 }
 
 .tag {
