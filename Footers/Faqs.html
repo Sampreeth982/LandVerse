@@ -1,14 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <title>Real Estate FAQ Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ's</title>
     <style>
-        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 50px;
+            padding: 0;
+        }
+
+        .survey-container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #e72d27;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        select, input[type="text"], textarea {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgb(185, 51, 36);
+        }
+
+        .radio-group {
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+            font-weight: normal;
+        }
+
+        /* ✅ Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .survey-container {
+                width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            body {
+                margin: 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .survey-container {
+                width: 100%;
+                margin: 10px auto;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            select, input[type="text"], textarea {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to the FAQ's !!</h1>
+    <div class="survey-container">
+        <h2>Real Estate FAQ Survey</h2>
+        <p>Help us improve by answering a few quick questions!</p>
+
+        <form id="faqSurveyForm">
+            <label for="propertyType">1. What type of property are you interested in?</label>
+            <select id="propertyType" name="propertyType" required>
+                <option value="">-- Select Property Type --</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Villa">Villa</option>
+                <option value="Commercial Space">Commercial Space</option>
+                <option value="Plot">Plot</option>
+            </select>
+
+            <label for="budget">2. What is your budget range?</label>
+            <select id="budget" name="budget" required>
+                <option value="">-- Select Budget Range --</option>
+                <option value="Below 50 Lakhs">Below 50 Lakhs</option>
+                <option value="50 Lakhs - 1 Crore">50 Lakhs - 1 Crore</option>
+                <option value="1 Crore - 2 Crores">1 Crore - 2 Crores</option>
+                <option value="Above 2 Crores">Above 2 Crores</option>
+            </select>
+
+            <label for="location">3. Preferred location or area:</label>
+            <input type="text" id="location" name="location" placeholder="Enter preferred location">
+
+            <label>4. Are you looking for ready-to-move-in or under-construction property?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="propertyStatus" value="Ready to Move" required> Ready to Move</label>
+                <label><input type="radio" name="propertyStatus" value="Under Construction"> Under Construction</label>
+            </div>
+
+            <label for="questions">5. Do you have any specific questions or concerns?</label>
+            <textarea id="questions" name="questions" rows="4" placeholder="Type here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
