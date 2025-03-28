@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #1a1a1a;
+    background-color:white;
 }
 .container {
     display: flex;
@@ -24,7 +24,7 @@ body {
     text-align: center;
     font-weight: 900;
     font-size: 28px;
-    color: #00bfff;
+    color: #ff6b6b;
 }
 .form {
     display: flex;
@@ -59,7 +59,7 @@ label span {
 }
 .input:focus + span,
 .input:valid + span {
-    color: #00bfff;
+    color: #ff6b6b;
     top: 0px;
     font-size: 0.7em;
     font-weight: 600;
@@ -71,11 +71,11 @@ label span {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    background-color: #00bfff;
+    background-color: #ff6b6b;
     transition: .3s ease;
 }
 .submit:hover {
-    background-color: #00bfff96;
+    background-color:rgb(185, 51, 36);
 }
 .forgot-password {
     text-align: right;
@@ -83,11 +83,11 @@ label span {
     margin-top: -8px;
 }
 .forgot-password a {
-    color: #00bfff;
+    color: #ff6b6b;
     text-decoration: none;
 }
 .forgot-password a:hover {
-    text-decoration: underline royalblue;
+    text-decoration: underline #ff6b6b;
 }
 .social-account-container {
     margin-top: 20px;
